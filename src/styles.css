@@ -1,0 +1,23 @@
+:root{
+  --brand-primary: var(--fallback-primary, #00326a);
+  --brand-accent-1: var(--fallback-accent1, #009aa8);
+  --brand-accent-2: var(--fallback-accent2, #009859);
+  --brand-accent-3: var(--fallback-accent3, #009c93);
+  --brand-link: var(--fallback-link, #4a90e2);
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: #f7f9fb; color: #101828; }
+.app { max-width: 900px; margin: 40px auto; padding: 24px; background: white; border-radius: 16px; box-shadow: 0 6px 24px rgba(0,0,0,.08); }
+h1 { color: var(--brand-primary); margin-top: 0; }
+label { display:block; font-size: 14px; margin-bottom: 6px; color: #344054; }
+input, select { width: 100%; padding: 10px 12px; border: 1px solid #D0D5DD; border-radius: 10px; outline: none; }
+input:focus { border-color: var(--brand-accent-1); box-shadow: 0 0 0 3px rgba(0,154,168,.15); }
+button { appearance: none; border: 0; padding: 10px 14px; border-radius: 10px; background: var(--brand-primary); color: white; font-weight: 600; cursor: pointer; }
+button.secondary { background: var(--brand-accent-1); }
+section { margin: 24px 0; }
+.card { border: 1px solid #EAECF0; border-radius: 12px; padding: 16px; margin: 8px 0; background: #fff; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 720px){ .row { grid-template-columns: 1fr; }}
+.notice { font-size: 12px; color: #667085; }
+hr { border: none; border-top: 1px solid #EAECF0; margin: 24px 0; }
